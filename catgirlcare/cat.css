@@ -4,6 +4,7 @@
         color: #F8F8F8;
         background-color: #0C1021;
         background-color: #000000;
+        float: none;
         }
         
 html,body { height:100%; }
@@ -19,6 +20,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 1em;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 content {
@@ -33,6 +36,7 @@ h1 {
     }
     
 header {
+    background-image: url;
     background-color: white;
     color: #000000;
     padding: 1em;
@@ -52,6 +56,7 @@ article {
     
 footer {
     background-color: #111111;
+    color: white;
     padding-bottom: 2em;
     display: flex;
     }
@@ -109,6 +114,7 @@ ul#navbar {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    z-index: 4;
 }
     
 ul#navbar li {
@@ -170,3 +176,31 @@ li.dropdown {
 .center {
     text-align: center;
 }
+
+.homepage {
+    z-index: -1;
+}
+
+#changelog {
+    clear: both;
+    display: block;
+}
+
+#changelog ul {
+    display: block;
+    margin-top: 1em;
+    background-color: #eeeeee;
+    line-height: 1.5em;
+}
+
+#changelog ul li {
+    border-left: medium solid green;
+    background-color: #b3ecff;
+    vertical-align: middle;
+}
+
+#changelog ul li ul li {
+    background: #33ccff;
+    }
+    
+#changelog ul li ul li:nth-child(odd) { background: #80ffff; }
