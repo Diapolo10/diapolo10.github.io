@@ -1,7 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
+        <title>Super Mario 64 Machinima tutorial</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css" />
     </head>
     <body>
+        <article>
+            <header>
+                <h1>[HOW TO] Super Mario 64 machinima for Dummies</h1>
+                <hr/>
+            </header>
+            <content id="disclaimer">
+                <p>## NOTE: This guide will be updated regularly, if you
+                   feel that it is missing something please post a comment
+                   below.</p>
+                   
+                <p>## [Also, this tutorial will not be fully written until
+                   the end of June 2015 because the author is currently
+                   on a vacation.]</p>
+                   
+                <p>[NOTE: This tutorial is exclusive to the YTR Forums.
+                   If I find a copypaste of this from another website,
+                   penalties will occur. However, you are allowed, even
+                   encouraged, to share the link to this tutorial in 
+                   any way you wish.]</p>
+
+                <p>Hey, you have probably heard of people like
+                   Supermarioglitchy4, MarioMario54321 and Starman3.
+                   What do they have in common? They, and many others, 
+                   all make cool videos with a game called Super Mario 64. 
+                   "How do they do it?", you may ask. Worry not, this guide 
+                   will hopefully answer all of your questions and even 
+                   teach you how to make your own!</p>
+            </content>
+            <nav>
+                <ol><h3>Table of Contents:</h3>
+                    <li><a href="#first" >First steps</a>
+                        <ol>
+                            <li><a href="#emulators" >Emulators and emulation</a>
+                                <ol>
+                                    <li><a href="#p64" >Project 64</a></li>
+                                    <li><a href="#sm64" >Super Mario 64 ROM</a></li>
+                                    <li><a href="#hacks" >Hacked/Modified ROMs</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#screencap" >Screen capture software</a>
+                                <ol>
+                                    <li><a href="#fraps" >Fraps</a></li>
+                                    <li><a href="#shadowplay" >ShadowPlay</a></li>
+                                    <li><a href="#obs" >Open Broadcaster Software (OBS)</a></li>
+                                    <li><a href="#dxtory" >Dxtory</a></li>
+                                    <li><a href="#windvr" >Windows DVR</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#editor">Video editing software</a>
+                                <ol>
+                                    <li><a href="#wmm" >Windows Movie Maker</a></li>
+                                    <li><a href="#vegas" >Vegas Pro</a></li>
+                                    <li><a href="#premiere" >Adobe Premiere</a></li>
+                                    <li><a href="#videopad" >VideoPad Video editor</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#tools">Commonly used tools</a>
+                                <ol>
+                                    <li><a href="#m64mm" >Mario 64 Movie Maker</a></li>
+                                    <li><a href="#tt64" >Toad's Tool 64</a></li>
+                                    <li><a href="#ccgen" >SM64 color code generator</a></li>
+                                    <li><a href="#tools_other" >Other tools</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a href="#beginners">Learning the ropes</a>
+                        <ol>
+                            <li><a href="#run" >Running ROMs on an emulator</a></li>
+                            <li><a href="#tips_n_tricks" >Beginner tips and tricks</a></li>
+                            <li><a href="#rec_setup" >Setting up your recording software</a></li>
+                            <li><a href="#edit_setup" >Editing your video footage</a></li>
+                            <li><a href="#uploading" >Uploading to YouTube</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="">Advanced effects</a>
+                        <ol>
+                            <li><a href="">Using GameShark-codes</a>
+                                <ol>
+                                    <li><a href="">Using GameShark-codes</a></li>
+                                    <li><a href="">Commonly used codes</a></li>
+                                    <li><a href="">Less common codes</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="">Color codes</a>
+                                <ol>
+                                    <li><a href="">What is a color code?</a></li>
+                                    <li><a href="">Making a new color code</a></li>
+                                    <li><a href="">Shading</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="">Textures</a>
+                                <ol>
+                                    <li><a href="">Texture editing</a></li>
+                                    <li><a href="">Mario's textures</a></li>
+                                    <li><a href="">Creating texture packs</a></li>
+                                    <li><a href="">Using texture packs</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="">Hacked/Modified ROMs</a>
+                                <ol>
+                                    <li><a href="">Using hacked/modified ROMs</a></li>
+                                    <li><a href="">Commonly used hacks/mods</a></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a href="">Advanced video editing</a>
+                        <ol>
+                            <li><a href="">Chroma keying</a></li>
+                            <li><a href="">Masking and cloning</a></li>
+                            <li><a href="">Using additional games</a></li>
+                            <li><a href="">Fight scenes</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="">Highly advanced techniques</a></li>
+                </ol>
+            </nav>
+
+<!-- 1. First steps
+The world of SM64 machinima may seem really complicated and difficult at first glance, but do not worry: anyone can learn the basics in a few hours, usually even faster!
+This guide will help you through not only the beginning, but will also teach you many commonly used tricks and techniques even the most famous machinimists use quite often - even in machinima made with other games!
+
+1.1. Emulators and emulation
+In case you didn't know, we are now able to play old console games on a PC by using emulators, specifically created software that mimic the original console. It's entirely possible to use a real Nintendo 64 to make machinima videos, but since they are starting to become a rare sight and because emulators have some extremely useful features, I very much recommend using an emulator. There are quite a few different N64 emulators to choose from, but this tutorial focuses mainly on Project 64 (ver. 1.6). Feel free to use others such as Mupen 64 instead, if you like!
+        -->
+        </article>
     </body>
 </html>
