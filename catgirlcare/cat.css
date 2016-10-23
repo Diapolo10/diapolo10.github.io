@@ -4,6 +4,7 @@
         color: #F8F8F8;
         background-color: #0C1021;
         background-color: #000000;
+        float: none;
         }
         
 html,body { height:100%; }
@@ -19,6 +20,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 1em;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 content {
@@ -28,10 +31,12 @@ content {
 
 h1 {
     text-align: center;
-    font-size 
+    font-size: 2.7em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
     }
     
 header {
+    background-image: url;
     background-color: white;
     color: #000000;
     padding: 1em;
@@ -51,16 +56,13 @@ article {
     
 footer {
     background-color: #111111;
+    color: white;
     padding-bottom: 2em;
     display: flex;
     }
     
 footer a {
     color: white;
-    }
-    
-h1 {
-    font-size: 2.7em;
     }
 
 #linehd {
@@ -105,3 +107,100 @@ h1 {
 div:target, content:target {
     background-color: #aaaaaa;
     }
+    
+ul#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 4;
+}
+    
+ul#navbar li {
+    float: left;
+}
+    
+ul#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+    
+ul#navbar li a:hover {
+    background-color: #111;
+}
+    
+.dropbtn {
+    display: inline-block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}*/
+
+li.dropdown {
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+    z-index: 5;
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.homepage {
+    z-index: -1;
+}
+
+#changelog {
+    clear: both;
+    display: block;
+}
+
+#changelog ul {
+    display: block;
+    margin-top: 1em;
+    background-color: #eeeeee;
+    line-height: 1.5em;
+}
+
+#changelog ul li {
+    border-left: medium solid green;
+    background-color: #b3ecff;
+    vertical-align: middle;
+}
+
+#changelog ul li ul li {
+    background: #33ccff;
+    }
+    
+#changelog ul li ul li:nth-child(odd) { background: #80ffff; }
