@@ -1,3 +1,24 @@
+.default {
+        font-family: Georgia, serif, Courier New, Trebuchet, Tahoma, sans-serif;
+        font-size: 10;
+        color: #F8F8F8;
+        background-color: #0C1021;
+        background-color: #000000;
+        float: none;
+        }
+        
+html,body { height:100%; }
+
+body { 
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 1em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 ol {
     counter-reset: item;
 }
@@ -14,3 +35,34 @@ ol ol > li:before {
     content: counters(item, ".") ". ";
     margin-left: -20px;
 }
+
+content {
+    position: relative;
+    margin-top: 4em;
+    }
+
+h1 {
+    text-align: center;
+    font-size: 2.7em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    }
+    
+header {
+    background-image: url;
+    background-color: white;
+    color: #000000;
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+    }
+    
+article {
+        position: relative;
+        margin-right: 20%;
+        margin-left: 20%;
+        box-shadow: 0px 0px 10px 5px #000000;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 3em;
+    }
+    
