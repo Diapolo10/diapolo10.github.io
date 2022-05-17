@@ -1,9 +1,142 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Something.</title>
-    </head>
-    <body>
-        <h1>Something.</h1>
-    </body>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!-- Hero section start -->
+
+    <div class="hero">
+      <header>
+        <nav>
+          <h2 class="logo">Portfolio</h2> <!-- TODO: Change heading later -->
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <a href="#" class="btn">Subscribe</a>
+        </nav>
+      </header>
+      <article class="content"> <!-- TODO: Swap the headings to span with id -->
+        <h4>Hello, my name is</h4>
+        <h1>Lari <span>Liuhamo</span></h1>
+        <h3>I am a Software Engineer.</h3>
+        <section class="newsletter">
+          <form>
+            <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+            <input type="submit" name="submit" value="Let's start">
+          </form>
+        </section>
+      </article>
+    </div>
+
+    <!-- About section -->
+
+    <section class="about">
+      <main>
+        <img src="img/main_img.png">
+        <section class="about-text">
+          <h2>About Me</h2>
+          <h3>Developer <span>& Author</span></h3>
+          <p>I am a "Jack of all trades" developer with a focus on Python and Rust.
+            I can provide clean and robust code for nearly anything, write code
+            with unit testing in mind from the beginning, and break down problems
+            into smaller, more manageable chunks. Front-end web development may not
+            be my forté, but back-end and RESTful APIs are fine.
+            A robust application means fewer customer complaints.</p>
+          <p>I also write books in my spare time, hoping to help and inspire the
+            next generation of developers.</p>
+          <button type="button">Let's Talk</button>
+        </section>
+      </main>
+    </section>
+
+    <!-- Service section -->
+
+    <article class="service">
+      <section class="title">
+        <h2>Our Services</h2>
+      </section>
+
+      <section class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h3>Data Processing</h3>
+          <div class="pra">
+            <p>Data is the new gold; it can be used to predict future events and
+              trends. But in order to do that, it needs to be processed into a
+              useful form first.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="box">
+        <div class="card">
+          <i class="far fa-user"></i>
+          <h3>Data Processing</h3>
+          <div class="pra">
+            <p>Data is the new gold; it can be used to predict future events and
+              trends. But in order to do that, it needs to be processed into a
+              useful form first.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="box">
+        <div class="card">
+          <i class="far fa-bell"></i>
+          <h3>Data Processing</h3>
+          <div class="pra">
+            <p>Data is the new gold; it can be used to predict future events and
+              trends. But in order to do that, it needs to be processed into a
+              useful form first.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Contact Me section -->
+
+    <article class="contact-me">
+      <p>Let's Build the Future - Together.</p>
+      <a class="button-two" href="#">Hire Me</a>
+    </article>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>Lari Liuhamo</p>
+      <p>Now also available via various social media platforms:</p>
+      <section class="social">
+        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+        <a href="#"><i class="fa-brands fa-reddit-square"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </section>
+      <p class="end">&copy; Lari Liuhamo, 2022</p>
+    </footer>
+  </body>
 </html>

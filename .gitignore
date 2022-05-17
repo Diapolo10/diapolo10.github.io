@@ -41,3 +41,4 @@ Thumbs.db
 # Software-specific files #
 ###########################
 *.pdn
+.dccache
