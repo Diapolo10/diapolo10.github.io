@@ -10,41 +10,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   </head>
   <body>
 
     <!-- Hero section start -->
 
-    <div class="hero">
+    <div id="home" class="hero">
       <header>
         <nav>
-          <h2 class="logo">Portfolio</h2> <!-- TODO: Change heading later -->
+          <div>
+            <img src="img/cq.png">
+            <h2 class="logo">Portfolio</h2> <!-- TODO: Change heading later -->
+          </div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact_us">Contact Us</a></li>
+            <!--<li><a href="#">Blog</a></li>--> <!--Coming Soon-->
           </ul>
-          <a href="#" class="btn">Subscribe</a>
+          <!--<a href="#" class="btn">Subscribe</a>-->
         </nav>
       </header>
       <article class="content"> <!-- TODO: Swap the headings to span with id -->
         <h4>Hello, my name is</h4>
         <h1>Lari <span>Liuhamo</span></h1>
         <h3>I am a Software Engineer.</h3>
+        <!--
         <section class="newsletter">
           <form>
             <input type="email" name="email" id="mail" placeholder="Enter Your Email">
             <input type="submit" name="submit" value="Let's start">
           </form>
         </section>
+        -->
       </article>
     </div>
 
     <!-- About section -->
 
-    <section class="about">
+    <section id="about" class="about">
       <main>
         <img src="img/main_img.png">
         <section class="about-text">
@@ -58,57 +65,184 @@
             A robust application means fewer customer complaints.</p>
           <p>I also write books in my spare time, hoping to help and inspire the
             next generation of developers.</p>
-          <button type="button">Let's Talk</button>
+          <button onclick="location.href='https://www.linkedin.com/in/lari-liuhamo-226154127'" type="button">Let's Talk</button>
         </section>
       </main>
     </section>
 
     <!-- Service section -->
 
-    <article class="service">
+    <article id="services" class="service">
       <section class="title">
-        <h2>Our Services</h2>
+        <h2>My Services</h2>
       </section>
 
       <section class="box">
         <div class="card">
-          <i class="fas fa-bars"></i>
-          <h3>Data Processing</h3>
+          <i class="fa-solid fa-cloud-arrow-down"></i>
+          <h3>RESTful APIs</h3>
           <div class="pra">
-            <p>Data is the new gold; it can be used to predict future events and
-              trends. But in order to do that, it needs to be processed into a
-              useful form first.</p>
+            <p>Everything is moving online, but there's more than one way to
+              make use of this. Stateless RESTful APIs are a cornerstone of
+              robust web services.</p>
 
             <p style="text-align: center;">
-              <a class="button" href="#">Read More</a>
+              <a class="button" href="https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/">Read More</a>
             </p>
           </div>
         </div>
 
         <div class="card">
-          <i class="far fa-user"></i>
+          <i class="fa-solid fa-server"></i>
           <h3>Data Processing</h3>
           <div class="pra">
             <p>Data is the new gold; it can be used to predict future events and
               trends. But in order to do that, it needs to be processed into a
-              useful form first.</p>
+              more useful format first.</p>
 
             <p style="text-align: center;">
-              <a class="button" href="#">Read More</a>
+              <a class="button" href="https://peda.net/kenya/css/subjects/computer-studies/form-three/driac2/data-processing">Read More</a>
             </p>
           </div>
         </div>
 
         <div class="card">
-          <i class="far fa-bell"></i>
-          <h3>Data Processing</h3>
+          <i class="fa-solid fa-book"></i>
+          <h3>Libraries</h3>
           <div class="pra">
-            <p>Data is the new gold; it can be used to predict future events and
-              trends. But in order to do that, it needs to be processed into a
-              useful form first.</p>
+            <p>In order to avoid reinventing the wheel every time, knowing how to
+              write and design libraries well is important, as a library written
+              today could well be in use decades later.</p>
 
             <p style="text-align: center;">
-              <a class="button" href="#">Read More</a>
+              <a class="button" href="https://codeburst.io/writing-libraries-is-good-way-to-improve-your-development-skill-55b24384a120">Read More</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Skills section -->
+
+    <article id="skills" class="skills">
+      <section class="title">
+        <h2>My Skills</h2>
+      </section>
+
+      <section class="box">
+        <div class="card">
+          <i class="fa-brands fa-python"></i>
+          <h3>Python</h3>
+          <div class="pra">
+            <p>Skill level: ⭐⭐⭐⭐⭐</p>
+            <h4>Technologies:</h4>
+            <div class="tech">
+              <a href="https://fastapi.tiangolo.com/" title="FastAPI"><i class="devicon-fastapi-plain"></i></a>
+              <a href="https://flask.palletsprojects.com/en/2.1.x/" title="Flask"><i class="devicon-flask-original"></i></a>
+              <a href="https://www.heroku.com/" title="Heroku"><i class="devicon-heroku-original"></i></a>
+              <a href="https://docs.pytest.org/en/7.1.x/" title="Pytest"><i class="devicon-pytest-plain"></i></a>
+              <a href="https://www.sqlalchemy.org/" title="SQLAlchemy"><i class="devicon-sqlalchemy-plain"></i></a>
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-brands fa-rust"></i>
+          <h3>Rust</h3>
+          <div class="pra">
+            <p>Skill level: ⭐⭐</p>
+            <!--
+            <h4>Technologies:</h4>
+            <p class="tech">
+
+            </p>
+            -->
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="devicon-cplusplus-plain"></i>
+          <h3>C++</h3>
+          <div class="pra">
+            <p>Skill level: ⭐⭐</p>
+            <!--
+            <h4>Technologies:</h4>
+            <p class="tech">
+
+            </p>
+            -->
+          </div>
+        </div>
+
+        <!--
+        <div class="card">
+          <i class="devicon-cplusplus-plain"></i>
+          <h3>template</h3>
+          <div class="pra">
+            <p>Skill level: ⭐</p>
+            <h4>Technologies:</h4>
+            <p class="tech">
+              <a href="" title=""><i></i></a>
+            </p>
+          </div>
+        </div>
+        -->
+      </section>
+      <section class="box">
+        <div class="card">
+          <i class="devicon-git-plain"></i>
+          <h3>Version Control</h3>
+          <div class="pra">
+            <p>Skill level: ⭐⭐⭐⭐</p>
+            <h4>Technologies:</h4>
+            <p class="tech">
+              <a href="https://about.codecov.io/" title="Codecov"><i class="devicon-codecov-plain"></i></a>
+              <a href="https://git-scm.com/" title="Git"><i class="devicon-git-plain"></i></a>
+              <a href="https://github.com/" title="GitHub"><i class="devicon-github-original"></i></a>
+              <a href="https://about.gitlab.com/" title="GitLab"><i class="devicon-gitlab-plain"></i></a>
+              <a href="https://www.jenkins.io/" title="Jenkins"><i class="devicon-jenkins-line"></i></a>
+              <a href="https://travis-ci.org/" title="Travis CI"><i class="devicon-travis-plain"></i></a>
+              <a href="https://www.atlassian.com/software/jira" title="Jira"><i class="devicon-jira-plain"></i></a>  
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Databases</h3>
+          <div class="pra">
+            <p>Skill level: ⭐⭐⭐</p>
+            <h4>Technologies:</h4>
+            <p class="tech">
+              <a href="https://www.mysql.com/" title="MySQL"><i class="devicon-mysql-plain"></i></a>
+              <a href="https://www.postgresql.org/" title="PostgreSQL"><i class="devicon-postgresql-plain"></i></a>
+              <a href="https://www.sqlite.org/" title="SQLite"><i class="devicon-sqlite-plain"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="devicon-devicon-plain"></i>
+          <h3>Other</h3>
+          <div class="pra">
+            <p class="tech">
+              <a href="https://aws.amazon.com/" title="AWS"><i class="devicon-amazonwebservices-original"></i></a>
+              <a href="https://www.arduino.cc/" title="Arduino"><i class="devicon-arduino-plain"></i></a>
+              <a href="https://codepen.io/" title="Codepen"><i class="devicon-codepen-plain"></i></a>
+              <a href="https://www.debian.org/" title="Debian"><i class="devicon-debian-plain"></i></a>
+              <a href="https://www.docker.com/" title="Docker"><i class="devicon-docker-plain"></i></a>
+              <a href="https://www.gimp.org/" title="GIMP"><i class="devicon-gimp-plain"></i></a>
+              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" title="HTML5"><i class="devicon-html5-plain"></i></a>
+              <a href="https://ifttt.com/" title="IFTTT"><i class="devicon-ifttt-original"></i></a>
+              <a href="https://kubernetes.io/" title="K8s"><i class="devicon-kubernetes-plain"></i></a>
+              <a href="https://www.ni.com/fi-fi/shop/labview.html" title="LabVIEW"><i class="devicon-labview-plain"></i></a>
+              <a href="https://www.linux.org/" title="Linux"><i class="devicon-linux-plain"></i></a>
+              <a href="https://commonmark.org/help/" title="Markdown"><i class="devicon-markdown-original"></i></a>
+              <a href="https://www.raspberrypi.org/" title="Raspberry Pi"><i class="devicon-raspberrypi-line"></i></a>
+              <a href="https://www.ssh.com/" title="SSH"><i class="devicon-ssh-original-wordmark"></i></a>
+              <a href="https://ubuntu.com/" title="Ubuntu"><i class="devicon-ubuntu-plain"></i></a>
+              <a href="https://www.microsoft.com/en-us/windows" title="Windows"><i class="devicon-windows8-original"></i></a>
             </p>
           </div>
         </div>
@@ -117,9 +251,9 @@
 
     <!-- Contact Me section -->
 
-    <article class="contact-me">
+    <article id="contact_us" class="contact-me">
       <p>Let's Build the Future - Together.</p>
-      <a class="button-two" href="#">Hire Me</a>
+      <a class="button-two" href="https://www.linkedin.com/in/lari-liuhamo-226154127" target="_blank" rel="noopener noreferrer">Hire Me</a>
     </article>
 
     <!-- Footer -->
@@ -128,11 +262,59 @@
       <p>Lari Liuhamo</p>
       <p>Now also available via various social media platforms:</p>
       <section class="social">
-        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-        <a href="#"><i class="fa-brands fa-reddit-square"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/lari-liuhamo-226154127/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.paypal.com/paypalme/lariliuhamo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-paypal"></i></a>
+        <a href="https://reddit.com/u/diapolo10" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-reddit-square"></i></a>
+        <a href="https://steamcommunity.com/id/Diapolo_10/" target="_blank" rel="noopeener noreferrer"><i class="fa-brands fa-steam-square"></i></i></a>
+        <a href="https://twitter.com/diapolo101" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
       </section>
       <p class="end">&copy; Lari Liuhamo, 2022</p>
     </footer>
   </body>
 </html>
+
+<!--
+
+                                    ,%#,.(&/
+                               .*%%*./#//#(,,%&/.
+                  .,*//(#%%%#/. ,((/,*%/*&(,/((*..*(%%%#((/*,.
+                 /*.***//////*,,/%%/,(%##%#**%%/,,*///////**,.(.
+                ./,,**%%##(***/#@@@/#%######(@@@%/*,*/(##%/**./,
+                */.*.(/%@@@@@@@@@@@/#%######(@&&&&&&&&&&&//,*,*/
+               .(,,*,((#/&@@@@@@@@@/########(@&&&&&&&&&*(#/***./,
+              /(.,,,%*###&/(@@@@@@@(########(@@&&&&&#/%###/(,,*./(.
+       .*/(/, .*,,(/*######%#*%(**/,########*(**(%*(%######/*(,,*, .*(//,.
+    .*..,,,,..,#(**/(######((#&/,//,##(#####*//**%#(((####((/,,/(*..,,,,..*
+    .*...,#,*#@@@@@@&,/(((((((((%#,,##((((##*,(%((((((((((*(&%%%%%(*,/,...*
+    .,,.,.(/&&&&@@@@@@&**(((((((((#%#((((((#%#(((((((((/,%&%%%%%%%%%//...,*
+    ..,.,.//#@&&@@@@@%****.((((((((((((((((((((((((((,,***%%%%%%%%%#**.,.,,
+    . ,..,.(/(#######,.,,,,,,#((((((((((((((((((((%,,,,,,.,((((////**,,..*.
+      .*.,.*/*((((((((((((((((((((((((((((((((((((((((((((((((((((/**,,.,,
+       ,,.,,/*/(((((((((((((((((((((((((((((((((((((((((((((((((((*/,,..*.
+       .*.,,,/*((((((((((((//((((((((((((((((((((((//((((((((((((*/*,, /,
+        .* ,,*//&%%%%,,,,,,,,(///////////////////(#,,*,,,,*#####/*/., /*
+         ,/.,,*((@@@@&***,*#(///////////////////////#/,**/%%%%%(/*.,.**
+          ,/.,,,(/&@@@%*((/////////((//////(((////////(#,#&%%%(/*,,.**
+           ./,,,,(/%#*#/////////(/,,/(//////*,*(/////////#//&*(*,,./,
+            ./*.*,/(,/////////(,*//,////////*//*,(/////////*//,*,,(.
+              ,#,,*.((,/////*/@#**/,////////,/**#&/*(////*/(.**.(*
+                *(,,*,*#,/*#@@@@@@@(//*/**///@&&&&&&%*/.((,**.//
+                  *#..**,%//&@@@@@@(//****///@&&&&&&(*#,,/,.#/
+                    .#(.*/,,#//&@@@(//****///@&&&(*%/,//.*#,
+                       *%/.*/*,##*%(//*****/(&*/%*,(/.*%/
+                          ,#(.*(/,/&(,,***,/%(,/(/ /%/
+                             .#%*./((,/%&(,/((,,%%,
+                                 ,#&*./(#/,,%&*
+                                     .(&@%,
+
++------------------------------------------------------------------------------+
+|  ____    ___                        _____                           __       |
+| /\  _`\ /\_ \                      /\  __`\                        /\ \__    |
+| \ \ \/\_\//\ \      __      ___    \ \ \/\ \  __  __     __    ____\ \ ,_\   |
+|  \ \ \/_/_\ \ \   /'__`\  /' _ `\   \ \ \ \ \/\ \/\ \  /'__`\ /',__\\ \ \/   |
+|   \ \ \L\ \\_\ \_/\ \L\.\_/\ \/\ \   \ \ \\'\\ \ \_\ \/\  __//\__, `\\ \ \_  |
+|    \ \____//\____\ \__/.\_\ \_\ \_\   \ \___\_\ \____/\ \____\/\____/ \ \__\ |
+|     \/___/ \/____/\/__/\/_/\/_/\/_/    \/__//_/\/___/  \/____/\/___/   \/__/ |
+|                                                                              |
++------------------------------------------------------------------------------+
+-->

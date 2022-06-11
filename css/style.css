@@ -5,10 +5,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/background_black.png);
+    background-image: url(../img/background_test.png);
     background-size: cover;
     background-position: center;
 }
@@ -20,6 +24,16 @@ nav {
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    width: 50px;
+    display: inline-flex;
 }
 
 .logo {
@@ -120,6 +134,8 @@ h4 {
     right: 6px;
 }
 
+/* About me */
+
 .about {
     width: 100%;
     padding: 100px 0px;
@@ -183,6 +199,8 @@ button:hover {
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
+/* Services */
 
 .service {
     background: #101010;
@@ -255,6 +273,109 @@ button:hover {
     cursor: pointer;
 }
 
+/* Skills */
+
+.skills {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.skills .title h2 {
+    color: #ffffff;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.skills .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.skills .card {
+    height: 320px;
+    width: 250px;
+    padding: 0px 0px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    /*overflow: hidden;*/
+    text-align: center;
+}
+
+.skills .card i {
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    color: #f9004d;
+}
+
+.skills .card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.skills .card h4 {
+    color: #ffffff;
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.skills .pra p {
+    color: #d0ab1e;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.skills .pra .tech i {
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 0px;
+    color: #f9004d;
+}
+
+.skills .pra .tech {
+    background:#101010;
+    border-radius: 5px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px;
+    /*padding: 5px;*/
+    width: 90%;
+    height: 90%;
+    margin-bottom: 10px;
+
+}
+
+.skills .card .button {
+    background-color: #f9004d;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.skills .card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+/* Contact me */
+
 .contact-me {
     width: 100%;
     height: 290px;
@@ -288,6 +409,8 @@ button:hover {
     border: 2px solid #f9004d;
     cursor: pointer;
 }
+
+/* Footer */
 
 footer {
     position: relative;
